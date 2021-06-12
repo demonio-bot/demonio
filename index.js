@@ -78,7 +78,7 @@ banChats = false
 offline = false
 targetpc = '573104841527'
 owner = '573104841527'
-fake = '💔⃞⃝⃟⃢👑𝖉𝖊𝖒𝖔𝖓𝖎𝖔.💔⃞⃝⃟⃢☠️⃝⃞⃟⃢🏴‍☠️'
+fake = '🏴‍☠️.⃞⃝⃟⃢🔥𝖉𝖊𝖒𝖔𝖓𝖎𝖔🔥⃞⃝⃟⃢☠️⃝⃞⃟⃢🏴‍☠️'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -660,7 +660,7 @@ break
 
 ┈┉•━─┉↯ ｇｒｕｐｏ  ↯━─┉•┉┈
 
-https://chat.whatsapp.com/LEQWlwCY2fU2UYjcQv2Eb3
+https://chat.whatsapp.com/LbkF3P0jN0XCKWiNNiyCz6
 
 ┈┉•━─┉↯ ｉｎｆｏ ↯━─┉•┉┈
 
@@ -753,18 +753,20 @@ https://chat.whatsapp.com/LEQWlwCY2fU2UYjcQv2Eb3
 ├┉↯ *${prefix}doctag* [ document > tag ]
 ├┉↯ *${prefix}kontag* [ 687xx|aku > tag ]
 ├┉↯ *${prefix}totag* [ media > tag ]
-├┉↯ *${prefix}ping*
+├┉↯ *${prefix}ping* [ velocidad ]
 ├┉↯ *${prefix}term* [ code ]
 ├┉↯ *${prefix}runtime*
 ├┉↯*${prefix}speed*
-╰──┉🏴‍☠️.⃞⃝⃟⃢👑𝖉𝖊𝖒𝖔𝖓𝖎𝖔🔥⃞⃝⃟⃢☠️⃝⃞⃟⃢🏴‍☠️
+├──┉𝔡𝔢𝔪𝔬𝔫𝔦𝔬-𝔡𝔢𝔪𝔬𝔫𝔦𝔞❤️
+├──┉𝔡𝔢𝔪𝔬𝔫𝔦𝔞-𝔡𝔢𝔪𝔬𝔫𝔦𝔬❤️
+╰──┉𝒑𝒂𝒕𝒐-𝒆𝒗𝒐𝒍𝒆𝒕❤️
 `
         	faketokoforwaded(menu)
            	break
     case prefix+ 'on':
             if (!mek.key.fromMe) return 
             offline = false
-            fakestatus('iqɒq ɒɘᴎí| ᴎƎ')
+            fakestatus('ᵉⁿ ˡⁱⁿᵉᵃ 😽')
             break       
     case prefix+ 'off':
             if (!mek.key.fromMe) return 
@@ -772,13 +774,13 @@ https://chat.whatsapp.com/LEQWlwCY2fU2UYjcQv2Eb3
             waktu = Date.now()
             anuu = args.join(' ') ? args.join(' ') : '-'
             alasan = anuu
-            fakestatus(' ᴬᵖᵃᵍᵃᵈᵒ 🥺')
+            fakestatus(' ᴬᵖᵃᵍᵃᵈᵒ 😿')
             break
     case prefix+ 'status':
             fakestatus(`*STATUS*\n${offline ? '> OFFLINE' : '> ONLINE'}\n${banChats ? '> SELF-MODE' : '> PUBLIC-MODE'}`)
             break
 	case prefix+ 'self':
-          	if (!mek.key.fromMe) return fakestatus('This command only for me')
+          	if (!mek.key.fromMe) return fakestatus('ᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ˢᵒˡᵒ ᵖᵃʳᵃ ᵐⁱ')
           	if (banChats === true) return
           	uptime = process.uptime()
          	 // var taged = ben.message.extendedTextMessage.contextInfo.mentionedJid[0]
@@ -787,7 +789,7 @@ https://chat.whatsapp.com/LEQWlwCY2fU2UYjcQv2Eb3
           	break
  //Set Owner For gc
     case prefix+ 'public':
-          	if (!mek.key.fromMe) return fakestatus('This command only for me')
+          	if (!mek.key.fromMe) return fakestatus('ᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ˢᵒˡᵒ ᵖᵃʳᵃ ᵐⁱ')
           	if (banChats === false) return
           	// var taged = ben.message.extendedTextMessage.contextInfo.mentionedJid[0]
           	banChats = false
@@ -800,7 +802,7 @@ https://chat.whatsapp.com/LEQWlwCY2fU2UYjcQv2Eb3
 					    demond.toggleDisappearingMessages(from, 0)
 					    break
             case prefix+ 'spam':
-                if (!isMe) return reply('This command only for saia')
+                if (!isMe) return reply('ᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ᵉˢ ˢᵒˡᵒ ᵖᵃʳᵃ ᵈᵉᵐᵒⁿⁱᵒ')
                 if (!arg) return reply(`Penggunaan ${prefix}spam teks|jumlahspam`)
                 argz = arg.split("|")
                 if (!argz) return reply(`Penggunaan ${prefix}spam teks|jumlah`)
@@ -810,32 +812,32 @@ https://chat.whatsapp.com/LEQWlwCY2fU2UYjcQv2Eb3
                 }
 	        break
              case prefix+ 'mute':
-                if (!isMe) return reply('This command only for saia')
+                if (!isMe) return reply('ᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ᵉˢ ˢᵒˡᵒ ᵖᵃʳᵃ ᵈᵉᵐᵒⁿⁱᵒ')
                 demond.modifyChat(from, ChatModification.mute, 24*60*60*1000)
                 reply('*succes mute this chat*')
                 console.log('succes mute chat = ' + from)
                 break
             case prefix+ 'unmute':
-                if (!isMe) return reply('This command only for saia')
+                if (!isMe) return reply('ᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ᵉˢ ˢᵒˡᵒ ᵖᵃʳᵃ ᵈᵉᵐᵒⁿⁱᵒ')
                 demond.modifyChat(from, ChatModification.unmute)
                 reply('*succes unmute this chat*')
                 console.log('succes unmute chat = ' + from)
                 break
             case prefix+ 'delete':
-                if (!isMe) return reply('This command only for saia')
+                if (!isMe) return reply('ᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ᵉˢ ˢᵒˡᵒ ᵖᵃʳᵃ ᵈᵉᵐᵒⁿⁱᵒ')
                 reply('*succes delete this chat*')
                 console.log('succes delete chat = ' + from)
                 demond.modifyChat(from, ChatModification.delete)
                 break
 	case prefix+ 'setreply':
 	case prefix+ 'setfake':
-	  if (isMe) return('Khusus Sayah bang kamu siapa?')
+	  if (isMe) return('Qᵘⁱᵉⁿ ᵉʳᵉˢ ᵗᵘ?')
 			if (!q) return fakegroup(mess.wrongFormat)
 			fake = q
 			fakegroup(`Succes Mengganti Conversation Fake : ${q}`)
 			break
 	case prefix+ 'setfakeimg':
-	  if (isMe) return('Khusus Sayah bang kamu siapa?')
+	  if (isMe) return('Qᵘⁱᵉⁿ ᵉʳᵉˢ ᵗᵘ?')
         	if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedSticker) && args.length == 0) {
           	boij = isQuotedImage || isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 			delb = await demond.downloadMediaMessage(boij)
@@ -846,12 +848,12 @@ https://chat.whatsapp.com/LEQWlwCY2fU2UYjcQv2Eb3
           	}
 			break	
 	case prefix+ 'setprefix':
-	  if (isMe) return('Khusus Sayah bang kamu siapa?')
+	  if (isMe) return('Qᵘⁱᵉⁿ ᵉʳᵉˢ ᵗᵘ?')
 			prefix = q
 			fakegroup(`Succes Mengganti Prefix : ${q}`)
 			break
 	case prefix+ 'setthumb':
-		  if (isMe) return('Khusus Sayah bang kamu siapa?')
+		  if (isMe) return('Qᵘⁱᵉⁿ ᵉʳᵉˢ ᵗᵘ?')
 	        if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedSticker) && args.length == 0) {
           	boij = isQuotedImage || isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 			delb = await demond.downloadMediaMessage(boij)
@@ -862,7 +864,7 @@ https://chat.whatsapp.com/LEQWlwCY2fU2UYjcQv2Eb3
           	}
 			break	
     case prefix+ 'settarget':
-	  if (isMe) return('Khusus Sayah bang kamu siapa?')
+	  if (isMe) return('Qᵘⁱᵉⁿ ᵉʳᵉˢ ᵗᵘ?')
             if(!q) return reply(`${prefix}settarget 628xxxxx`)
             targetpc = args[0]
             fakegroup(`Succes Mengganti target fitnahpc : ${targetpc}`)
