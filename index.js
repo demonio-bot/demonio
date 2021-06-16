@@ -1929,14 +1929,14 @@ case prefix+ 'add':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-if (args.length < 1) return reply('Yang mau di add jin ya?')
-if (args[0].startsWith('08')) return reply('Gunakan kode negara mas')
+if (args.length < 1) return reply('Qué quieres agregar al genio?')
+if (args[0].startsWith('08')) return reply('Utilice el código de país') 
 try {
 num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 demond.groupAdd(from, [num])
 } catch (e) {
 console.log('Error :', e)
-reply('Gagal menambahkan target, mungkin karena di private')
+reply('No se pudo agregar el objetivo, tal vez porque en privado')
 }
 break
 case prefix+ 'kick':
@@ -1946,7 +1946,7 @@ if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag yg ingin angda tusbol!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
-teks = '*Mengeluarkan :* '
+teks = '*secretar :* '
 for (let _ of mentioned) {
 teks += `@${_.split('@')[0]}\n`
 }
@@ -1964,7 +1964,7 @@ if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
-teks = 'Berhasil Promote\n'
+teks = 'Promocionar con exito\n'
 for (let _ of mentioned) {
 teks += `@${_.split('@')[0]}\n`
 }
@@ -1982,7 +1982,7 @@ if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
-teks = 'Berhasil Demote\n'
+teks = 'Degradar con exito\n'
 for (let _ of mentioned) {
 teks += `@${_.split('@')[0]}\n`
 }
@@ -2006,7 +2006,7 @@ break//DONE
             pe = args.join(' ') 
             entah = pe.split('|')[0]
             nah = pe.split('|')[1]
-            if (isNaN(entah)) return reply('Invalid phone number');
+            if (isNaN(entah)) return reply('numero de telefono invalido');
             vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + `FN:${nah}\n`
@@ -2015,7 +2015,7 @@ break//DONE
             demond.sendMessage(from, {displayName: `${nah}`, vcard: vcard}, contact)
             break
  	case prefix+ 'hidetag':
-			if (!mek.key.fromMe) return fakestatus('SELF-BOT')
+			if (!mek.key.fromMe) return fakestatus('demond-bot')
 			if (!isGroup) return reply(mess.only.group)
 			var value = args.join(' ')
 			var group = await demond.groupMetadata(from)
@@ -2085,11 +2085,11 @@ break//DONE
 			    await fs.unlinkSync(`doc.txt`)
 			    break
     case prefix+ 'kontag':
-            if (!mek.key.fromMe) return reply('SELF-BOT')
+            if (!mek.key.fromMe) return reply('demond-bot')
             pe = args.join('')
             entah = pe.split('|')[0]
             nah = pe.split('|')[1]
-            if (isNaN(entah)) return reply('Invalid phone number');
+            if (isNaN(entah)) return reply('numero de telefono invalido');
             members_ids = []
             for (let mem of groupMembers) {
             members_ids.push(mem.jid)
@@ -2212,7 +2212,7 @@ break//DONE
 //Maker
 
 case prefix+ 'bc':
-					if (!isMe) return reply('Only Owner...')
+					if (!isMe) return reply('unico dueño...')
 					if (args.length < 1) return reply('.......')
 					const more = String.fromCharCode(8206)
                     const readmore = more.repeat(4001)
@@ -2223,12 +2223,12 @@ case prefix+ 'bc':
 						for (let _ of anu) {
 							demond.sendMessage(_.jid, bc, image, {caption: `${body.slice(4)}\n> Izin Broadcast`, sendEphemeral: true})
 						}
-						reply('Suksess broadcast')
+						reply('El anuncio fue dado con exito')
 					} else {
 						for (let _ of anu) {
 							sendMess(_.jid,`${body.slice(4)}` + readmore + `\n>Broadcast`)
 						}
-						reply('Suksess broadcast')
+						reply('El anuncio fue dado con exito')
 					}
 					break
 					case prefix+ 'level':
