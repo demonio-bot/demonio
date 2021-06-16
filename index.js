@@ -593,19 +593,19 @@ const levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, r
 //=====================//      
          // Ucapan Waktu
         const hour_now = moment().format('HH')
-        var ucapanWaktu = 'Pagi Kawan👋'
+        var ucapanWaktu = 'amigos de la mañana👋'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi Kawan👋'
+          ucapanWaktu = 'amigos de la mañana👋'
         } else if (hour_now >= '10' && hour_now <= '14') {
           ucapanWaktu = 'Siang Kawan👋'
         } else if (hour_now >= '14' && hour_now <= '17') {
-          ucapanWaktu = 'Soree Kawan👋'
+          ucapanWaktu = 'buenas tardes amigo 👋'
         } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Selamat petang👋'
+          ucapanWaktu = 'Buenas noches👋'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam Kawan🌚'
+          ucapanWaktu = 'Noche de amigos🌚'
         } else {
-          ucapanWaktu = 'Selamat Malam🌚'
+          ucapanWaktu = 'Buenas noches🌚'
         }
 //========================================================================================================================//
 		colors = ['blue']
@@ -621,9 +621,15 @@ const levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, r
 		if (!mek.key.fromMe && banChats === true) return
 //botna
 switch (command) {
-  case prefix+ 'gemido':
+ if(budy.match('demond')){
+  result = fs.readFileSync(`./stik/demond.webp`)
+	demond.sendMessage(from, result, sticker, {
+  quoted: mek
+	})
+  }
+ case prefix+ 'gemido':
   buf = fs.readFileSync(`./audios/gemido.mp3`)
-  Nombre.sendMessage(from, buf, audio, {
+  demond.sendMessage(from, buf, audio, {
 	mimetype: 'audio/mp4', quoted: mek, ptt: true
   })
 break
@@ -679,11 +685,11 @@ https://chat.whatsapp.com/LbkF3P0jN0XCKWiNNiyCz6
 - Prefix : 「 ${prefix} 」
 
 ╭──┉↯ ｃｏｍａｎｄｏｓ ↯━─
-├┉↯ *${prefix}off*
-├┉↯ *${prefix}on*
+├┉↯ *${prefix}off* [ apagado ]
+├┉↯ *${prefix}on* [ encendido ]
 ├┉↯ *${prefix}status*
 ├┉↯ *${prefix}self*
-├┉↯ *${prefix}public*
+├┉↯ *${prefix}public* [ publico ]
 ├┉↯ *${prefix}peson*
 ├┉↯ *${prefix}pesoff*
 ├┉↯ *${prefix}spam*
@@ -705,44 +711,44 @@ https://chat.whatsapp.com/LbkF3P0jN0XCKWiNNiyCz6
 ├┉↯ *${prefix}loli*
 ├┉↯ *${prefix}waifu*
 ├┉↯ *${prefix}husbu*
-├┉↯ *${prefix}image* [ random ]
-├┉↯ *${prefix}pinterest* [ random ]
-├┉↯ *${prefix}anime* [ random ]
+├┉↯ *${prefix}image* [ aletorio ]
+├┉↯ *${prefix}pinterest* [ aletorio ]
+├┉↯ *${prefix}anime* [ aletorio ]
 ├┉↯ *${prefix}wallpaperanime*
 ├┉↯ *${prefix}nsfwavatar* 
-├┉↯ *${prefix}nekopoi*  
-├┉↯ *${prefix}hentai* 
-├┉↯ *${prefix}sticker* [ image > sticker]
+├┉↯ *${prefix}nekopoi*  [ sticker hentai ]
+├┉↯ *${prefix}hentai*  [ imagen hentai ]
+├┉↯ *${prefix}sticker* [ imagen > sticker]
 ├┉↯ *${prefix}swm* [ author|packname ]
 ├┉↯ *${prefix}take* [ author|packname ]
 ├┉↯ *${prefix}fdeface*
 ├┉↯ *${prefix}emoji*
 ├┉↯ *${prefix}attp*
-├┉↯ *${prefix}toimg* [ sticker > image ]
+├┉↯ *${prefix}toimg* [ sticker > imagen ]
 ├┉↯ *${prefix}tovid* [ sticker > video]
 ├┉↯ *${prefix}tomp3* [ sticker > mp3]
-├┉↯ *${prefix}slow* [ video > slow ]
-├┉↯ *${prefix}fast* [ video > fast ]
-├┉↯ *${prefix}reverse* [ video > reverse ]
+├┉↯ *${prefix}slow* [ video > lento ]
+├┉↯ *${prefix}fast* [ video > rapido ]
+├┉↯ *${prefix}reverse* [ video > contrarrestar ]
 ├┉↯ *${prefix}tourl* [ image > url]
 ├┉↯ *${prefix}upswteks*
-├┉↯ *${prefix}upswimage*
+├┉↯ *${prefix}upswimage* 
 ├┉↯ *${prefix}upswvideo*
 ├┉↯ *${prefix}herolist*
 ├┉↯ *${prefix}herodetail* [ Barats ]
-├┉↯ *${prefix}igstalk* [username]
+├┉↯ *${prefix}igstalk* [nombre de usuario]
 ├┉↯ *${prefix}ig* [ link ] 
-├┉↯ *${prefix}play* [ query ] 
-├┉↯ *${prefix}video* [ query ] 
+├┉↯ *${prefix}play* [ consulta ] 
+├┉↯ *${prefix}video* [ consulta ] 
 ├┉↯ *${prefix}ytmp3* [ link ] 
 ├┉↯ *${prefix}ytmp4* [ link ] 
-├┉↯ *${prefix}ytsearch* [ query ] 
+├┉↯ *${prefix}ytsearch* [ consulta ] 
 ├┉↯ *${prefix}twitter* [ link ] 
 ├┉↯ *${prefix}tiktok* [ link ] 
 ├┉↯ *${prefix}tiktokaudio* [ link ] 
 ├┉↯ *${prefix}fb* [ link ] 
-├┉↯ *${prefix}tiktokaudio* [ query ] 
-├┉↯ *${prefix}brainly* [ query ] 
+├┉↯ *${prefix}tiktokaudio* [ consulta ] 
+├┉↯ *${prefix}brainly* [ consulta ] 
 ├┉↯ *${prefix}add* [ 687xx ]
 ├┉↯ *${prefix}kick* [ tag ]
 ├┉↯ *${prefix}promote* [ tag member ]
@@ -751,16 +757,16 @@ https://chat.whatsapp.com/LbkF3P0jN0XCKWiNNiyCz6
 ├┉↯ *${prefix}hidetag* [ your message ]
 ├┉↯ *${prefix}sticktag* [ sticker > tag ]
 ├┉↯ *${prefix}giftag* [ gif > tag ]
-├┉↯ *${prefix}doctag* [ document > tag ]
+├┉↯ *${prefix}doctag* [ documento > tag ]
 ├┉↯ *${prefix}kontag* [ 687xx|aku > tag ]
 ├┉↯ *${prefix}totag* [ media > tag ]
 ├┉↯ *${prefix}ping* [ velocidad ]
 ├┉↯ *${prefix}term* [ code ]
 ├┉↯ *${prefix}runtime*
 ├┉↯*${prefix}speed*
-├──┉𝔡𝔢𝔪𝔬𝔫𝔦𝔬-𝔡𝔢𝔪𝔬𝔫𝔦𝔞
-├──┉𝔡𝔢𝔪𝔬𝔫𝔦𝔞-𝔡𝔢𝔪𝔬𝔫𝔦𝔬
-╰──┉𝒑𝒂𝒕𝒐-𝒆𝒗𝒐𝒍𝒆𝒕
+├──┉𝔡𝔢𝔪𝔬𝔫𝔦𝔬-𝔡𝔢𝔪𝔬𝔫𝔦𝔞 🔥
+├──┉𝔡𝔢𝔪𝔬𝔫𝔦𝔞-𝔡𝔢𝔪𝔬𝔫𝔦𝔬 🍑
+╰──┉𝒑𝒂𝒕𝒐-𝒆𝒗𝒐𝒍𝒆𝒕 🦆
 `
         	faketokoforwaded(menu)
            	break
@@ -871,7 +877,7 @@ https://chat.whatsapp.com/LbkF3P0jN0XCKWiNNiyCz6
             fakegroup(`Succes Mengganti target fitnahpc : ${targetpc}`)
             break
 case prefix+ 'term':
-if (!isMe) return reply('Only Owner...')
+if (!isMe) return reply('unico propietario...') 
 			if (!q) return fakegroup(mess.wrongFormat)
 			exec(q, (err, stdout) => {
 			if (err) return fakegroup(`demond@self:~$ ${err}`)
@@ -977,7 +983,7 @@ case prefix+ 'pinterest':
 			nye = await getBuffer(ke)
 			demond.sendMessage(from, nye, image, { caption: 'Powered bai gatau pinterest lah bang awokwok', quoted: mek })
 			.catch(err => {
-				return('lagi sange bang? nyari apaan loh?, puasa bang xixixi')
+				return('gran hermano? que estas buscando?, rapido hermano xixixi')
 			})
 			break
     case prefix+ 'anime':
@@ -1004,7 +1010,7 @@ case prefix+ 'pinterest':
 			bufwanime = await getBuffer(wanime.data.url)
 			demond.sendMessage(from, bufwanime, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 //HARAM FEATURE
@@ -1013,7 +1019,7 @@ case prefix+ 'nsfwavatar':
 				nsavatar = await getBuffer(anu.data.url)
 				demond.sendMessage(from, nsavatar, image, {quoted: mek})
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})	
 			break
 case prefix+ 'nekopoi':
@@ -1045,7 +1051,7 @@ case prefix+ 'pussyimage':
 			bufpusy = await getBuffer(pusiimg.data.url)
 				demond.sendMessage(from, bufpusy, MessageType.image, {quoted: mek})
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'oppai':
@@ -1053,7 +1059,7 @@ case prefix+ 'oppai':
 			opaiz = await getBuffer(opai.data.url)
 			demond.sendMessage(from, opaiz, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'feetg':
@@ -1085,7 +1091,7 @@ case prefix+ 'ero':
 			bufero = await getBuffer(eroz.data.url)
 			demond.sendMessage(from, bufero, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'erokemo':
@@ -1093,7 +1099,7 @@ case prefix+ 'erokemo':
 			erokzs = await getBuffer(erokz.data.url)
 			demond.sendMessage(from, erokzs, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'eroyuri':
@@ -1101,7 +1107,7 @@ case prefix+ 'eroyuri':
 			buferoyu = await getBuffer(opai.data.url)
 			demond.sendMessage(from, buferoyu, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'tickle':
@@ -1145,7 +1151,7 @@ case prefix+ 'femdom':
 			bupemdom = await getBuffer(anu.data.url)
 				demond.sendMessage(from, bupemdom, image, {quoted: mek})
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'futanari':
@@ -1170,7 +1176,7 @@ case prefix+ 'trap':
 			traps = await getBuffer(trapx.data.url)
 			demond.sendMessage(from, traps, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'pat':
@@ -1202,7 +1208,7 @@ case prefix+ 'blowjob':
 			bufblowz = await getBuffer(blowz.data.url)
 			demond.sendMessage(from, bufblowz, image, {quoted: mek})
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 	case prefix+ 'hentai':
@@ -1210,7 +1216,7 @@ case prefix+ 'blowjob':
 			bufhtz = await getBuffer(hentaiz.data.url)
 			demond.sendMessage(from, bufhtz, image, {quoted: mek})
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 	case prefix+ 'hololewed':
@@ -1218,7 +1224,7 @@ case prefix+ 'blowjob':
 			hololewx = await getBuffer(hololew.data.url)
 			demond.sendMessage(from, hololewx, image, { quoted: mek })
 			.catch(err =>{
-			  return('Tobat puasa goblokk..')
+			  return('Estupido arrepentimiento en ayunas..')
 			})
 			break
 case prefix+ 'lewd':
@@ -1232,7 +1238,7 @@ case prefix+ 'lewd':
 			lewdkz = await getBuffer(lewdkz.data.url)
 			demond.sendMessage(from, lewdkz, image, { quoted: mek })
 			.catch(err =>{
-			  return('Tobat puasa goblokk..')
+			  return('Estupido arrepentimiento en ayunas..')
 			})
 			break
 case prefix+ 'lewdkemo':
@@ -1240,7 +1246,7 @@ case prefix+ 'lewdkemo':
 			buflewd = await getBuffer(lewdkm.data.url)
 			demond.sendMessage(from, buflewd, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'goose':
@@ -1272,7 +1278,7 @@ case prefix+ 'yuri':
 			bupyuri = await getBuffer(yuriz.data.url)
 			demond.sendMessage(from, bupyuri, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 	case prefix+ 'anal':
@@ -1304,7 +1310,7 @@ case prefix+ 'eron':
 			buferon = await getBuffer(eronz.data.url)
 			demond.sendMessage(from, buferon, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'kiss':
@@ -1324,7 +1330,7 @@ case prefix+ 'keta':
 			bufketa = await getBuffer(ketaz.data.url)
 			demond.sendMessage(from, bufketa, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'cum':
@@ -1344,7 +1350,7 @@ case prefix+ 'cumimage':
 			bupjpg = await getBuffer(cumjpg.data.url)
 			demond.sendMessage(from, bupjpg, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'oppai':
@@ -1352,7 +1358,7 @@ case prefix+ 'oppai':
 			opaiz = await getBuffer(opai.data.url)
 			demond.sendMessage(from, opaiz, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 case prefix+ 'holoero':
@@ -1360,7 +1366,7 @@ case prefix+ 'holoero':
 			bufholox = await getBuffer(holox.data.url)
 			demond.sendMessage(from, bufholox, image, { quoted: mek })
 			.catch(err => {
-			return('Ad yg mengerror ulang coba..')
+			return('El anuncio tiene errores intentalo nuevamente..')
 			})
 			break
 //MAKER
