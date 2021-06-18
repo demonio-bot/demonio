@@ -620,8 +620,8 @@ const levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, r
 //selfmode
 		if (!mek.key.fromMe && banChats === true) return
 //botna
-switch (command) {
- if(budy.match('demond')){
+
+ if(budy.match('demonio')){
   result = fs.readFileSync(`./stik/demond.webp`)
 	demond.sendMessage(from, result, sticker, {
   quoted: mek
@@ -632,6 +632,7 @@ switch (command) {
   demond.sendMessage(from, buf, audio, {
 	mimetype: 'audio/mp4', quoted: mek, ptt: true
   })
+  switch (command) {
 break
   case prefix+ 'menu':
   case prefix+ 'help':
@@ -2085,7 +2086,7 @@ break//DONE
 			    await fs.unlinkSync(`doc.txt`)
 			    break
     case prefix+ 'kontag':
-            if (!mek.key.fromMe) return reply('demond-bot')
+            if (!mek.key.fromMe) return reply('DEMONIO-BOT')
             pe = args.join('')
             entah = pe.split('|')[0]
             nah = pe.split('|')[1]
