@@ -1,6 +1,6 @@
 // SC NYA JANGAN DI JUAL BANG
 //MAKASIH DAH PAKE 
-// THANKS TO MHANKBARBAR AND ALL CREATOR BOT INDO 
+// DEMONIO ES REY NO MUEVAS ESTO O SE DAÑA
 
 //npm
 const qrcode = require("qrcode-terminal")
@@ -621,17 +621,7 @@ const levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, r
 		if (!mek.key.fromMe && banChats === true) return
 //botna
 
- if(budy.match('demonio')){
-  result = fs.readFileSync(`./stik/demond.webp`)
-	demond.sendMessage(from, result, sticker, {
-  quoted: mek
-	})
-  }
- case prefix+ 'gemido':
-  buf = fs.readFileSync(`./audios/gemido.mp3`)
-  demond.sendMessage(from, buf, audio, {
-	mimetype: 'audio/mp4', quoted: mek, ptt: true
-  })
+
   switch (command) {
 break
   case prefix+ 'menu':
@@ -656,21 +646,21 @@ break
     var menu = `  
 ╭╊━┈ै✾※҉═᪳͢►ۣۜ⌝ːː⌜◄᪳͢═※✾ै┈━╉╮
                    
-        ᴰᵉ͢ᵐᵒⁿⁱᵒ¿?͓-❤️-ᵖʳⁱⁿᶜᵉˢᵃღ¿?͓
+     🔥ＤＥＭＯＮＩＯ   ＢＯＴ🔥
    
   ╰━─┉※҉═᪳͢►ۣۜ╮━╭◄᪳͢═※҉┉─━╯
-┈┉•━─┉↯  ｒｅｇｌａｓ  ↯━─┉•┉┈
+┈┉•━─┉↯  ＲＥＧＬＡＳ ↯━─┉•┉┈
 
 ➣ᴺᵒ ˢᵖᵃᵐ 
 ➣ᴺᵒ ˡˡᵃᵐᵃᵈᵃˢ
 ➣ᴾᵘᵉᵈᵉˢ ʰᵃᵇˡᵃʳˡᵉ ᵃˡ ᵇᵒᵗ ᵃˡ ᵖʳⁱᵛᵃᵈᵒ ᵖᵉʳᵒ ⁿᵒ ʰᵃᵍᵃˢ ˢᵖᵃᵐ ᵖᵘᵗᵃ
 ➣ᴾᵃʳᵃ ᵐᵉᵗᵉʳ ᵉˡ ᵇᵒᵗ ᵃ ᵗᵘ ᵍʳᵘᵖᵒ ᵖᵘᵉᵈᵉˢ ᵖᵃᵍᵃʳ ᶜᵒⁿ ᵘⁿ ᶻⁱⁿᵍ ᵒ ᵘⁿ ⁿúᵐᵉʳᵒ ⁽ qᵘᵉ ⁿᵒ ˢᵉᵃ ⁺¹ ⁺⁹⁹⁴ ⁺⁴⁴ ⁾
 
-┈┉•━─┉↯ ｇｒｕｐｏ  ↯━─┉•┉┈
+┈┉•━─┉↯ ＮＯＭＢＲＥ  ↯━─┉•┉┈
 
-https://chat.whatsapp.com/LbkF3P0jN0XCKWiNNiyCz6
+ＤＥＭＯＮＩＯ   ＢＯＴ   ＯＦＣ
 
-┈┉•━─┉↯ ｉｎｆｏ ↯━─┉•┉┈
+┈┉•━─┉↯ ＩＮＦＯ ↯━─┉•┉┈
 
 - *Hits de hoy : ${hit_today.length}*
 - *Celular :* ${device_manufacturer}
@@ -685,7 +675,7 @@ https://chat.whatsapp.com/LbkF3P0jN0XCKWiNNiyCz6
 - *Mi tiempo vivo:* ${runtem}
 - Prefix : 「 ${prefix} 」
 
-╭──┉↯ ｃｏｍａｎｄｏｓ ↯━─
+╭──┉↯ ＣＯＭＡＮＤＯＳ ↯━─
 ├┉↯ *${prefix}off* [ apagado ]
 ├┉↯ *${prefix}on* [ encendido ]
 ├┉↯ *${prefix}status*
@@ -720,8 +710,8 @@ https://chat.whatsapp.com/LbkF3P0jN0XCKWiNNiyCz6
 ├┉↯ *${prefix}nekopoi*  [ sticker hentai ]
 ├┉↯ *${prefix}hentai*  [ imagen hentai ]
 ├┉↯ *${prefix}sticker* [ imagen > sticker]
-├┉↯ *${prefix}swm* [ author|packname ]
-├┉↯ *${prefix}take* [ author|packname ]
+├┉↯ *${prefix}swm* [ autor|nombre del paquete ]
+├┉↯ *${prefix}take* [ autor|nombre del paquete ]
 ├┉↯ *${prefix}fdeface*
 ├┉↯ *${prefix}emoji*
 ├┉↯ *${prefix}attp*
@@ -731,46 +721,52 @@ https://chat.whatsapp.com/LbkF3P0jN0XCKWiNNiyCz6
 ├┉↯ *${prefix}slow* [ video > lento ]
 ├┉↯ *${prefix}fast* [ video > rapido ]
 ├┉↯ *${prefix}reverse* [ video > contrarrestar ]
-├┉↯ *${prefix}tourl* [ image > url]
+├┉↯ *${prefix}tourl* [ imagen > url]
 ├┉↯ *${prefix}upswteks*
 ├┉↯ *${prefix}upswimage* 
 ├┉↯ *${prefix}upswvideo*
 ├┉↯ *${prefix}herolist*
 ├┉↯ *${prefix}herodetail* [ Barats ]
 ├┉↯ *${prefix}igstalk* [nombre de usuario]
-├┉↯ *${prefix}ig* [ link ] 
+├┉↯ *${prefix}ig* [ enlace ] 
 ├┉↯ *${prefix}play* [ consulta ] 
 ├┉↯ *${prefix}video* [ consulta ] 
-├┉↯ *${prefix}ytmp3* [ link ] 
-├┉↯ *${prefix}ytmp4* [ link ] 
+├┉↯ *${prefix}ytmp3* [ enlace ] 
+├┉↯ *${prefix}ytmp4* [ lenlace ] 
 ├┉↯ *${prefix}ytsearch* [ consulta ] 
-├┉↯ *${prefix}twitter* [ link ] 
-├┉↯ *${prefix}tiktok* [ link ] 
-├┉↯ *${prefix}tiktokaudio* [ link ] 
-├┉↯ *${prefix}fb* [ link ] 
+├┉↯ *${prefix}twitter* [ enlace ] 
+├┉↯ *${prefix}tiktok* [ enlace ] 
+├┉↯ *${prefix}tiktokaudio* [ enlace ]
+├┉↯ *${prefix}fb* [ enlace ] 
 ├┉↯ *${prefix}tiktokaudio* [ consulta ] 
 ├┉↯ *${prefix}brainly* [ consulta ] 
 ├┉↯ *${prefix}add* [ 687xx ]
-├┉↯ *${prefix}kick* [ tag ]
-├┉↯ *${prefix}promote* [ tag member ]
-├┉↯ *${prefix}demote* [ tag admin ]
+├┉↯ *${prefix}kick* [ etiqueta ]
+├┉↯ *${prefix}promote* [ miembro de etiqueta ]
+├┉↯ *${prefix}demote* [ etiqueta de administrador ]
 ├┉↯ *${prefix}kontak* [ 628xx|aku ]
-├┉↯ *${prefix}hidetag* [ your message ]
-├┉↯ *${prefix}sticktag* [ sticker > tag ]
-├┉↯ *${prefix}giftag* [ gif > tag ]
-├┉↯ *${prefix}doctag* [ documento > tag ]
-├┉↯ *${prefix}kontag* [ 687xx|aku > tag ]
-├┉↯ *${prefix}totag* [ media > tag ]
-├┉↯ *${prefix}ping* [ velocidad ]
-├┉↯ *${prefix}term* [ code ]
+├┉↯ *${prefix}hidetag* [ tu mensaje ]
+├┉↯ *${prefix}sticktag* [ sticker > etiqueta ]
+├┉↯ *${prefix}giftag* [ gif > etiqueta ]
+├┉↯ *${prefix}doctag* [ documento > etiqueta ]
+├┉↯ *${prefix}kontag* [ 687xx|aku > etiqueta ]
+├┉↯ *${prefix}totag* [ media > etiqueta ]
+├┉↯ *${prefix}ping* [ velocidad de internet ]
+├┉↯ *${prefix}term* [ codigo ]
 ├┉↯ *${prefix}runtime*
-├┉↯*${prefix}speed*
-├──┉𝔡𝔢𝔪𝔬𝔫𝔦𝔬-𝔡𝔢𝔪𝔬𝔫𝔦𝔞 🔥
-├──┉𝔡𝔢𝔪𝔬𝔫𝔦𝔞-𝔡𝔢𝔪𝔬𝔫𝔦𝔬 🍑
-╰──┉𝒑𝒂𝒕𝒐-𝒆𝒗𝒐𝒍𝒆𝒕 🦆
+├┉↯*${prefix}speed* [ velocidad ]
+├──┉  ＣＲＥＤＩＴＯＳ ↯━─
+├──┉𝒹 𝑒 𝓂 𝑜 𝓃 𝒾 𝑜 -𝒾 𝒶 𝓇 𝒶 🔥
+├──┉𝒾 𝒶 𝓇 𝒶 -𝒹 𝑒 𝓂 𝑜 𝓃 𝒾 𝑜 ❤️
+╰──┉𝓅 𝒶 𝓉 𝑜 -𝑒 𝓋 𝑜 𝓁 𝑒 𝓉  🦆
 `
         	faketokoforwaded(menu)
            	break
+case prefix+ 'gemido':
+  buf = fs.readFileSync(`./audios/gemido.mp3`)
+  demond.sendMessage(from, buf, audio, {
+	mimetype: 'audio/mp4', quoted: mek, ptt: true  })
+break
     case prefix+ 'on':
             if (!mek.key.fromMe) return 
             offline = false
